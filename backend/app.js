@@ -8,12 +8,14 @@ app.use(express.json());
 
 let transactions = [];
 
-// GET all transactions
 app.get('/api/transactions', (req, res) => {
   res.json(transactions);
 });
 
-// POST new transaction
+app.get('/', (req, res) => {
+  res.send('Finance Tracker API is running 🚀');
+});
+
 app.post('/api/transactions', (req, res) => {
   const newItem = {
     id: Date.now(),
@@ -24,15 +26,10 @@ app.post('/api/transactions', (req, res) => {
   res.status(201).json(newItem);
 });
 
-// DELETE transaction
 app.delete('/api/transactions/:id', (req, res) => {
   const id = parseInt(req.params.id);
   transactions = transactions.filter(t => t.id !== id);
   res.json({ message: "Deleted" });
 });
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+module.exports = app;
