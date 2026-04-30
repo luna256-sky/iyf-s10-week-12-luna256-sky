@@ -31,4 +31,8 @@ app.delete('/api/transactions/:id', (req, res) => {
   res.json({ message: "Deleted" });
 });
 
-module.exports = app;
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
