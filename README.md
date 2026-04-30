@@ -36,6 +36,16 @@ A full-stack finance tracker that lets users log income and expenses, auto-calcu
 **Tools:** Git, GitHub, npm, ESLint
 
 ## 📁 Project Structure
+   finance-tracker-week-12/
+   ├── backend/          # Express API
+   │   ├── app.js       # Routes: GET/POST/DELETE /api/transactions
+   │   └── server.js    # Runs on port 3000
+   ├── frontend/         # React + Vite
+   │   ├── src/
+   │   │   ├── components/
+   │   │   └── App.jsx
+   │   └── vite.config.js
+   └── README.md
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
