@@ -1,0 +1,44 @@
+# 💰 Finance Tracker — Week 12 Full-Stack Submission
+
+A full-stack finance tracker that lets users log income and expenses, auto-calculates balance, and manages all transactions. 
+
+**Submission Date:** 1st May 2026  
+**GitHub:** https://github.com/lucywachu77-dev/finance-tracker-week-12
+
+## 👥 Team Week 12
+
+| Name | Role | Area |
+| --- | --- | --- |
+| Team Leader | Overall Management & Integration | GitHub, merging, testing, deployment |
+| Martin Mburu Kinyanjui | HTML Structure Lead | Frontend layout - `App.jsx`, `Layout.jsx` |
+| Moureen Gacheri | HTML Forms Developer | `TransactionForm.jsx` |
+| Michelle Terer | Main CSS Designer | Global styles, colors, fonts, `App.css` |
+| Maria Jones Anyango | Component Styling | Buttons, cards, transaction list styles |
+| Erick Kamau Muiruri | Responsive Design | Mobile/tablet/desktop breakpoints |
+| Dolla Grace Ambwaya | Income Module (JS) | Add income logic, display income |
+| Naomi Murugi | Expense Module (JS) | Add expense logic, deduct from balance |
+| Patrick Ngigi Njoroge | Core JS Logic | Display transactions, delete, auto balance |
+| Juliet Adhiambo | Testing & Documentation | QA, README, demo notes |
+
+## 🚀 Features
+1. **Add Transactions**: Create income or expense with amount, description, date
+2. **View Transactions**: Dynamic list of all transactions from database
+3. **Delete Transactions**: Remove any entry by ID
+4. **Auto Balance**: Balance updates instantly = `Total Income - Total Expenses`
+5. **Responsive UI**: Works on mobile, tablet, desktop
+6. **RESTful API**: Backend with GET, POST, DELETE endpoints
+7. **CORS Enabled**: Frontend and backend communicate seamlessly
+
+## 🛠 Tech Stack
+**Frontend:** React 18, Vite, CSS3  
+**Backend:** Node.js, Express.js, CORS middleware  
+**Language:** JavaScript (ES6)  
+**Tools:** Git, GitHub, npm, ESLint
+
+## 📁 Project Structure
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/lucywachu77-dev/finance-tracker-week-12.git
+cd finance-tracker-week-12
