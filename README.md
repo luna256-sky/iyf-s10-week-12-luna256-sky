@@ -47,6 +47,12 @@ A full-stack finance tracker that lets users log income and expenses, auto-calcu
    │   └── vite.config.js
    └── README.md
 ## ⚙️ Installation & Setup
+### Test Run - 1st May 2026
+**Tester**: Juliet Adhiambo  
+**Result**: PASS - All core features working in Codespaces
+- Income/Expense CRUD functional
+- Balance calculation correct  
+- Responsive on mobile view
 
 ### 1. Clone the repository
 ```bash
