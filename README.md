@@ -1,4 +1,4 @@
-# 💰 Finance Tracker — Week 12 Full-Stack Submission
+# 💰 Finance Tracker — Week 12 Full-Stack submissions
 
 A full-stack finance tracker that lets users log income and expenses, auto-calculates balance, and manages all transactions. 
 
