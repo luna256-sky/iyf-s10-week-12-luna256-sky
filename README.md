@@ -62,6 +62,13 @@ A full-stack finance tracker that lets users log income and expenses, auto-calcu
 - No data persistence — transactions reset if backend restarts
 - No input validation for negative numbers yet
 - No user login/auth
+  ### Final Submission Checklist - 1st May 2026
+- [x] Backend API running: GET/POST/DELETE /api/transactions
+- [x] Frontend UI: Forms by Moureen, Styled by Michelle/Maria, Responsive by Erick
+- [x] Core Logic: Income by Dolla, Expense by Naomi, Balance/Delete by Patrick
+- [x] Testing: Juliet - All features pass in Codespaces
+- [x] GitHub: Public repo with README + correct folder structure
+- [x] Integration: CORS fixed, frontend connects to backend
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/lucywachu77-dev/finance-tracker-week-12.git
