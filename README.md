@@ -58,3 +58,12 @@ A full-stack finance tracker that lets users log income and expenses, auto-calcu
 ```bash
 git clone https://github.com/lucywachu77-dev/finance-tracker-week-12.git
 cd finance-tracker-week-12
+### Bugs Found & Fixed
+- **CORS Error**: Frontend port 5173 couldn’t fetch from backend 3000. **Fix**: Added `app.use(cors())` in backend.
+- **Typo Risk**: Folder names case-sensitive. `cd fronted` fails — must be `cd frontend`.
+- **npm install**: Slow on cyber café WiFi. Takes 3-5 min per folder.
+
+### Known Limitations
+- No data persistence — transactions reset if backend restarts
+- No input validation for negative numbers yet
+- No user login/auth
