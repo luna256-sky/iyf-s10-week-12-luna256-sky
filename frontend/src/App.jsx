@@ -5,9 +5,11 @@ function App() {
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
 
+  const API_URL = "https://finance-tracker-week-12.onrender.com/api/transactions";
+
   // GET transactions
   useEffect(() => {
-    fetch("https://finance-tracker-week-12.onrender.com/api/transactions")
+    fetch(API_URL)
       .then(res => res.json())
       .then(data => setTransactions(data))
       .catch(err => console.log(err));
@@ -15,13 +17,15 @@ function App() {
 
   // ADD transaction
   const addTransaction = () => {
-    fetch("https://finance-tracker-week-12.onrender.com/api/transactions", {
+    if (!title || !amount) return;
+
+    fetch(API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        title: title,
+        title,
         amount: Number(amount)
       })
     })
@@ -33,20 +37,20 @@ function App() {
       });
   };
 
-  // ✅ DELETE transaction
+  // DELETE transaction
   const deleteTransaction = (id) => {
-    fetch(`https://finance-tracker-week-12.onrender.com/api/transactions/${id}`, {
+    fetch(`${API_URL}/${id}`, {
       method: "DELETE"
     }).then(() => {
       setTransactions(transactions.filter((t) => t.id !== id));
     });
   };
 
-  // ✅ BALANCE calculation
+  // BALANCE
   const balance = transactions.reduce((total, t) => total + t.amount, 0);
 
   return (
-    <div>
+    <div style={{ padding: "20px" }}>
       <h1>Finance Tracker 💰</h1>
 
       {/* INPUT FORM */}
@@ -67,10 +71,10 @@ function App() {
         Add Transaction
       </button>
 
-      {/* ✅ BALANCE DISPLAY */}
+      {/* BALANCE */}
       <h2>Balance: {balance}</h2>
 
-      {/* DISPLAY */}
+      {/* TRANSACTIONS */}
       <h2>Transactions</h2>
 
       {transactions.length === 0 ? (
@@ -80,8 +84,6 @@ function App() {
           {transactions.map((t) => (
             <li key={t.id}>
               {t.title} - {t.amount}
-
-              {/* ✅ DELETE BUTTON */}
               <button onClick={() => deleteTransaction(t.id)}>
                 ❌
               </button>

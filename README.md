@@ -1,97 +1,84 @@
-# Week 12: Finance Tracker 💰
+# 💰 Finance Tracker — Week 12 Full-Stack Project
 
-## Author
-- **Name:** Lucy Wachu
-- **GitHub:** [@lucywachu77-dev](https://github.com/lucywachu77-dev)
-- **Date:** May 1, 2026
+A full-stack Finance Tracker application that allows users to add income and expenses, automatically calculate balance, and manage transactions through a RESTful API.
 
 ---
 
-## Project Description
-The Finance Tracker is a simple full-stack web application that helps small businesses track income and expenses. 
-
-It simulates an M-Pesa-style system where users can:
-- Add transactions
-- View transaction history
-- Delete transactions
-- Automatically calculate balance
+## 📅 Submission Details
+- **Submission Date:** 1st May 2026  
+- **GitHub Repository:** https://github.com/lucywachu77-dev/finance-tracker-week-12  
 
 ---
 
-## Technologies Used
-- React (Vite)
-- JavaScript
-- CSS
-- Node.js
-- Express
-- Render (deployment)
+## 👥 Team Week 12
+
+| Name | Role | Area |
+|------|------|------|
+| Lucy Wachu | Team Leader | Overall Management, Integration, GitHub, Testing, Deployment |
+| Martin Mburu Kinyanjui | HTML Structure Lead | Frontend layout (`App.jsx`, structure) |
+| Moureen Gacheri | HTML Forms Developer | Transaction form (`TransactionForm.jsx`) |
+| Michelle Terer | Main CSS Designer | Global styles, colors, fonts (`App.css`) |
+| Maria Jones Anyango | Component Styling | Buttons, cards, transaction UI |
+| Sharleen Salma | Responsive Design Developer | Mobile/tablet/desktop responsiveness |
+| Dolla Grace Ambwaya | Income Module (JS) | Add income logic, display income |
+| Naomi Murugi | Expense Module (JS) | Add expense logic, deduct balance |
+| Patrick Ngigi Njoroge | Core JS Logic | Display transactions, delete, auto balance |
+| Juliet Adhiambo | Testing & Documentation | QA testing, README, demo notes |
 
 ---
 
-## Features
+## 🚀 Features
+
 - Add income and expense transactions
-- Display all transactions dynamically
+- View all transactions dynamically
 - Delete transactions
 - Automatic balance calculation
-- Backend API integration
-- Clean and responsive UI
+- Responsive UI (mobile, tablet, desktop)
+- RESTful API (GET, POST, DELETE)
+- Frontend & backend communication via CORS
 
 ---
 
-## How to Run
+## 🛠 Tech Stack
 
-### 1. Clone the repository
-git clone https://github.com/lucywachu77-dev/finance-tracker-week-12
+**Frontend:**
+- React (Vite)
+- CSS3
 
+**Backend:**
+- Node.js
+- Express.js
+- CORS
 
-### 3. Run frontend
-cd frontend
-npm install
-npm run dev
+**Tools:**
+- Git & GitHub
+- npm
+
+---
+
+## 📁 Project Structure
+finance-tracker-week-12/
+│
+├── backend/              # Express API
+│   ├── app.js           # Routes (GET, POST, DELETE)
+│   └── server.js        # Server entry (port 3000)
+│
+├── frontend/            # React (Vite)
+│   ├── src/
+│   │   ├── components/
+│   │   └── App.jsx
+│   └── vite.config.js
+│
+├── README.md
+├── CONTRIBUTORS.md
 
 
 ---
 
-## Lessons Learned
-- How to build a full-stack application using React and Express
-- How to connect frontend and backend using APIs
-- How to deploy a backend using Render
-- How to manage state in React using useState and useEffect
-- Importance of testing and debugging during development
+## ⚙️ Installation & Setup
 
----
+### 1. Clone Repository
+```bash
+git clone https://github.com/lucywachu77-dev/finance-tracker-week-12.git
+cd finance-tracker-week-12
 
-## Challenges Faced
-- Fixing backend connection issues
-- Handling API errors during development
-- Managing project structure for frontend and backend
-- Ensuring smooth communication between frontend and backend
-
----
-
-## Live Demo
-
-- Backend API:  
-https://finance-tracker-week-12.onrender.com/api/transactions
-
----
-
-## Team Contributions
-
-- **Lucy Wachu (Team Leader)**
-  - Backend development (Node.js, Express)
-  - API deployment (Render)
-  - Frontend integration (React)
-  - Core functionality implementation
-
-- **Team Members**
-  - Contributed to documentation, planning, testing, and UI ideas
-
----
-
-## Final Status
-
-✅ Fully working Finance Tracker  
-✅ Backend + frontend connected  
-✅ All core features implemented  
-✅ Ready for submission  
