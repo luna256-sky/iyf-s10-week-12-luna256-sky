@@ -50,9 +50,10 @@ A full-stack Finance Tracker application that allows users to add income and exp
 - Express.js
 - CORS
 
-**Tools:**
-- Git & GitHub
-- npm
+   **Tools:**
+   - Git & GitHub
+   - npm
+   - nodemon ^3.1.14 - Auto-restart server during development
 
 ---
 
