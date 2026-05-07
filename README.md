@@ -83,3 +83,5 @@ finance-tracker-week-12/
 git clone https://github.com/lucywachu77-dev/finance-tracker-week-12.git
 cd finance-tracker-week-12
 
+TEST EDIT FROM README CLEANUP BRANCH
+
